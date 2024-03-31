@@ -5,6 +5,8 @@ class MyTextField extends StatelessWidget {
   final String hintText;
   final bool obscureText;
   final suffixIcon;
+  final fillColor;
+  final textColor;
 
    MyTextField({
     super.key,
@@ -12,6 +14,8 @@ class MyTextField extends StatelessWidget {
     required this.hintText,
     required this.obscureText,
     required this.suffixIcon,
+    required this.fillColor,
+    required this.textColor,
   });
 
   @override
@@ -30,10 +34,10 @@ class MyTextField extends StatelessWidget {
                     focusedBorder:  OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.white),
                     ),
-                    fillColor: Colors.white,
+                    fillColor: fillColor,
                     filled: true,
                     hintText: hintText,
-                    hintStyle: TextStyle(color: Colors.grey[500]),
+                    hintStyle: TextStyle(color:textColor,),
                     suffixIcon:suffixIcon,
                   ),
                 

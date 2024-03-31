@@ -40,6 +40,8 @@ class LoginPage extends StatelessWidget {
                 hintText: 'correo electronico',
                 obscureText: false,
                 suffixIcon: null,
+                fillColor: Colors.white,
+                textColor: Colors.grey,
               ),
 
              SizedBox(height: 15,),
@@ -48,7 +50,9 @@ class LoginPage extends StatelessWidget {
                 controller: passwordController,
                 hintText: 'PIN',
                 obscureText: true,
-                suffixIcon: Icon(Icons. visibility_off)
+                suffixIcon: Icon(Icons. visibility_off),
+                fillColor: Colors.white,
+                textColor: Colors.grey,
               ),
 
               SizedBox(),
